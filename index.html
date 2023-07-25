@@ -4,14 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fruit website</title>
+    <!-- tailwind and daisyUI cdn  -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- website titlebar logo link -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
   </head>
   <body>
-    
+    <header class="w-[80%] mx-auto ">
+      <!-- navbar -->
+      <nav class="flex justify-between items-center lg:mt-12  z-0 lg:bg-[#F85559] rounded-[600px] p-0 md:py-5 md:px-12">
+        <div class="hidden lg:block">
+          <ul class="flex justify-between gap-5">
+            <li><a href="">home</a></li>
+            <li><a href=""> about us</a></li>
+            <li><a href=""> shop</a></li>
+            <li><a href="">All fruit</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="./images/logo.png" alt="" />
+          <h2 class="">Fruit Burst</h2>
+        </div>
+        <div class="hidden lg:block">
+          <input
+            placeholder="search here"
+            type="search"
+            name=""
+            id=""
+            class=" rounded-[50px] p-6 h-10 w-[25rem]"
+          />
+        </div>
+
+        <!-- responsive icon nav for small device -->
+        <div class="   inline-block z-10 lg:hidden">
+          <details class="dropdown mb-32">
+            <summary class="m-1 btn absolute top-8 right-7"><i class="fa-solid fa-bars "></i></summary>
+            <ul
+              class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-28 absolute right-2 top-[5rem]"
+            >
+              <li><a href="">home</a></li>
+              <li><a href=""> about us</a></li>
+              <li><a href=""> shop</a></li>
+              <li><a href="">All fruit</a></li>
+            </ul>
+          </details>
+        </div>
+      </nav>
+    </header>
+    <main class="w-[80%] mx-auto ">
+
+
+    </main>
+    <footer></footer>
   </body>
 </html>
